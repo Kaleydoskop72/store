@@ -1,0 +1,461 @@
+<?php
+
+
+namespace app\commands;
+use yii\console\Controller;
+use app\models\Product;
+
+include 'simple_html_dom.php';
+
+$listProduct = array();
+
+
+class PsRiolisController extends ParseController{
+
+	const SKU_CHAR_NUMBER 	= 1;
+	const SKU_NUMBER 		= 2;
+	const SKU_NUMBER_NUMBER = 3;
+
+	public $idCategory = 454;
+	public $aSku1c = [
+		[ 'sku' => '', '1c' => '' ],
+	];
+
+    public function get1cFromSku($product){
+    	// foreach
+    }
+
+
+	function parseSet($url){
+		$html = file_get_html($url);
+		$product = array();
+
+		//'http://www.riolis.ru/catalog/details_3367.html'
+	 	if (preg_match('/details_(\d+)\./', $url, $matches)){
+	 		$product['id'] = $matches[1];		
+	 	}
+		foreach($html->find('.v_price') as $div_price){		
+		 	if (preg_match('/(.+)&nbsp;/', $div_price->plaintext, $matches)){
+		 		$product['price'] = $matches[1];		
+		 	}	    		 			
+		}
+		foreach($html->find('.detail_descr') as $div_descr){		  	
+		 	foreach($div_descr->find('li') as $li){
+		 		foreach ($li->find('span') as $span) {
+		 			$attrName = $span->plaintext;
+		 		}
+		 		foreach ($li->find('b') as $b) {
+		 			$attrVal = $b->plaintext;
+		 		}
+				$patterns = array();
+				$patterns[0] = '/&nbsp;/';
+				$replacements = array();
+				$replacements[0] = ' ';
+				$attrVal =  preg_replace($patterns, $replacements, $attrVal);
+		 		switch (trim($attrName)){
+		 			case 'Наименование:':
+		 				$product['name'] = $attrVal;
+		 				break;
+		 			case 'Артикул:':
+						$patterns = array();
+						$patterns[0] = '/№/';
+						$replacements = array();
+						$replacements[0] = '';
+						$attrVal =  preg_replace($patterns, $replacements, $attrVal);	 				
+		 				$product['sku'] =  $attrVal; 				
+		 				break;
+		 			case 'Каталог:':
+		 				$product['numCatalog'] = $attrVal;
+		 				break;
+		 			case 'Нитки:':
+		 				$product['thread'] = $attrVal;
+		 				break;
+		 			case 'Цветов:':
+		 				$product['numColors'] = $attrVal;
+		 				break;	 								
+		 			case 'Игла:':
+		 				$product['needle'] = $attrVal;
+		 				break;
+		 			case 'Размер:':
+		 				$product['size'] = $attrVal;
+		 				break;
+		 			case 'Канва:':
+		 				$product['canva'] = $attrVal;
+		 				break;
+		 			case 'Буклет:':
+		 				$product['booklet'] = $attrVal;
+		 				break;
+		 			case 'Художник:':
+		 				$product['author'] = $attrVal;
+		 				break;
+		 			case 'Язык:':
+		 				$product['language'] = $attrVal;
+		 				break;
+		 			case 'Вес:':
+		 				$product['weight'] = $attrVal;
+		 				break;
+		 			case 'Размеры упаковки (ШхВхГ):':
+		 				$product['sizePack'] = $attrVal;
+		 				break;
+		 		}    		
+	  		}  		
+	  	}	 
+		$product['fileImg'] = $product['id'].".jpg";
+		$product['urlImg'] = "http://www.riolis.ru/zoom/photos/".$product['id'].".jpg";
+	  	return $product;
+	}
+
+
+
+	function parseCatalog($url){
+		$html = file_get_html($url);
+
+		foreach($html->find('.catalog_main') as $div){
+			foreach($div->find('.name') as $div2){
+				foreach($div2->find('a') as $a){
+					file_put_contents('php://stderr', $a->href."\n",FILE_APPEND);
+		 			$product = $this->parseSet($a->href);
+					print_r($product);
+					if ($id1C = $this->get1CFromSku($product)){
+						$product['id1C'] = $id1C;
+						echo "id1C == ".$id1C."\n";
+						//$this->insertProduct($product);	
+					}
+					sleep(0.5);
+		 		}
+		 	}
+		}
+	}    
+
+
+	public function getSku(){
+		$kolEmpty = 0;
+		$kolOk = 0;
+		foreach (Product::find()->where(['idCategory' => $this->idCategory])->all() as $product){
+			$sku = [];
+			$name = $product->nameFull;
+			if (preg_match('/^([а-яёА-Я]+)-(\d+)/', $name, $matches)) {
+				$sku['type'] = self::SKU_CHAR_NUMBER;
+				$sku['char'] = $matches[1];
+				$sku['number'] = $matches[2]; 
+			}elseif(preg_match('/^(\d+)\/(\d+)/', $name, $matches)){
+				$sku['type'] = self::SKU_NUMBER_NUMBER;				
+				$sku['number1'] = $matches[1];
+				$sku['number2'] = $matches[2];
+			}elseif(preg_match('/^(\d+)\s+([а-яёА-Яa-zA-Z]+)\s+/', $name, $matches)){
+				//echo "len: ".strlen($matches[2])."\n";
+				if (strlen($matches[2]) <= 4){
+					$sku['type'] = self::SKU_CHAR_NUMBER;				
+					$sku['number'] = $matches[1];
+					$sku['char'] = $matches[2];					
+				}elseif(preg_match('/^(\d+)/', $name, $matches)){
+					$sku['type'] = self::SKU_NUMBER;				
+					$sku['number'] = $matches[1];												
+				}				
+			}elseif(preg_match('/^(\d+)/', $name, $matches)){
+				$sku['type'] = self::SKU_NUMBER;				
+				$sku['number'] = $matches[1];												
+			}				
+			// echo $product->id1C." / ".$name."\n";
+			// print_r($sku);
+			if (count($sku) == 0){
+				$kolEmpty++;
+			}else{
+				$kolOk++;
+				echo "[ 'type' => ".$sku['type'].", '1c' => '".$product['id1C']."',";
+				switch ($sku['type']) {
+					case self::SKU_CHAR_NUMBER:
+						echo " 'char' => '".$sku['char']."', 'number' => '".$sku['number']."' ],\n";
+						break;
+					case self::SKU_NUMBER_NUMBER:
+						echo " 'number1' => '".$sku['number1']."', 'number2' => '".$sku['number2']."' ],\n";
+						break;		
+					case self::SKU_NUMBER:
+						echo " 'number' => '".$sku['number']."' ],\n";
+						break;											
+				}
+			}
+		}
+		echo "kolEmpty == ".$kolEmpty." koOk == ".$kolOk."\n";
+	}
+
+
+    public function actionIndex($mode){
+    	if ($mode == 'fill'){
+			$this->parseCatalog('http://www.riolis.ru/catalog/nabory_dlya_vyshivki_krestikom.html');
+			// for ($i=2; $i <= 37; $i++) { 
+			// 	$this->parseCatalog('http://www.riolis.ru/catalog/6_'.$i.'.html');
+			// 	sleep(0.5);				
+			// }        		
+    	}
+    	if ($mode == 'sku'){
+    		$this->getSku();
+    	}
+    }    
+
+
+}
+
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+$product = parseSet('http://www.riolis.ru/catalog/details_3367.html');
+print_r($product);
+save($product);
+
+// parseCatalog('http://www.riolis.ru/catalog/21_1.html');
+// parseCatalog('http://www.riolis.ru/catalog/21_2.html');
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+/**************
+
+
+    public function init(){
+    	$this->aSku1c = [
+			[ 'id1c' => 1276, 'sku' => 'Э-006' ],
+			[ 'id1c' => 2257, 'sku' => 'ЯС-004' ],
+    	];
+	}
+
+
+	function checkSku($product){
+		preg_match('/([а-яёА-Я]+)-(\d+)/', $product['sku'], $matches);
+		// print_r($matches);
+		echo "count == ".count($matches)."\n";
+		if (count($matches) == 3){
+			$skuChar = $matches[1];
+			$skuNum = $matches[2];
+			foreach ($this->aSku as $itemSku){
+				if ($itemSku['char'] == $skuChar){
+					foreach ($itemSku['number'] as $n){
+						if ($n == $skuNum){
+							return true;
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+
+
+
+	function parseSet($url){
+		$aKey = [
+			[ 'productKey' => 'author',  	'key' => 'Дизайнер' ],
+			[ 'productKey' => 'size',  		'key' => 'Размер' ],
+			[ 'productKey' => 'canva',  	'key' => 'Канва' ],		
+			[ 'productKey' => 'colorCount',  'key' => 'Количество цветов' ],				
+		];
+		$html = file_get_html($url);
+		$product = [];
+		$product['urlSrc'] = $url;
+		$div = $html->find('.title', 0);
+		$h1 = $div->find('h1', 0);
+		echo "h1 == ".$h1->plaintext."\n";  
+		if (preg_match('/МК-021/', $h1->plaintext)) {
+			$matches[1] = "МК-021";
+			$matches[2] = "Девушка с жемчужной сережкой";  
+		}elseif(preg_match('/МТ-002/', $h1->plaintext)){
+			$matches[1] = "МТ-002";
+			$matches[2] = "Год лошади";		
+		}else{
+			preg_match('/([а-яёА-Я]+-\d+)\s+(.+)/', $h1->plaintext, $matches);
+			if (count($matches) == 0){
+				preg_match('/([а-яёА-Я]+-\d+\/\d+)\s+(.+)/', $h1->plaintext, $matches);
+			}		
+		}
+		if (count($matches) == 0){
+			$product['sku']  = '';
+			$product['name'] = $h1->plaintext;
+		}else{
+			$product['sku']  = $matches[1];
+			$product['name'] = $matches[2];			
+		}
+		$product['id1C'] = $this->findId1c($product['sku']);
+		$product['colorCode'] = 0;		
+
+		foreach ($html->find('.mainImg') as $div) {
+			foreach ($div->find('img') as $img) {
+				$patterns = array();
+				$patterns[0] = '/\/\/www/';
+				$replacements = array();
+				$replacements[0] = 'www';
+				$product['imgUrl'] =  preg_replace($patterns, $replacements, $img->src);
+
+				if (preg_match('/jpg/', $img->src)){
+					preg_match('/\/(\w+\.jpg\?\d+)/', $img->src, $matches);						
+				}
+				if (preg_match('/jpeg/', $img->src)){
+					preg_match('/\/(\w+\.jpeg\?\d+)/', $img->src, $matches);			
+				}
+				$product['imgFile'] = '';
+				if (count($matches) == 2){
+					//echo "matches[1] == ".$img->src."\n";
+					$product['imgFile'] = $matches[1];
+				}
+
+			}
+		}
+
+		foreach ($html->find('.bx_item_description') as $div) {
+			$a = explode("\n", $div->plaintext);
+			$isTxt = 0;
+			$product['content'] = '';
+			foreach ($a as $str){
+				$str = trim($str);
+				if (strlen($str) == 0){
+					$isTxt = 1;
+				}else{
+					if ($isTxt){
+						$product['content'] .= $str;
+					}else{
+						if ($this->findKey($str, $aKey, $key, $val)){
+							$product[$key] = $val;
+						}else{												
+							if (preg_match('/Вышивается/', $str, $matches)){
+								$product['tech'] = $str;
+							}
+							if (preg_match('/В набор включается/', $str, $matches)){
+								$isTxt = 1;
+							}
+						}
+					}
+				}
+			}
+		}
+		$product['txt'] = '';
+		$product['isOrder'] = false;
+		foreach ($html->find('.longDesc') as $div) {
+			foreach ($div->find('dl') as $dl) {
+				$aDl = $dl->children();
+				for ($i=0; $i < count($aDl); $i+=2){
+					$key = trim($aDl[$i]->plaintext);
+					$val = trim($aDl[$i+1]->plaintext);	
+					// echo ('Актуальность' == $key). " ".$key."\n"; 
+					// echo ('Под заказ' == $val). " ".$val."\n";
+					if ('Актуальность' == $key && 'Под заказ' == $val){
+						$product['isOrder'] = true;
+					}
+					if ('Серия' == $key){
+						$product['categoryName'] = $val;
+					}				
+				}
+			}
+		}
+		$div = $html->find('.priceBlock', 0);
+		preg_match('/\s+Цена\s+([\d\w&;]+)\s+/', $div->plaintext, $matches);
+		$patterns = array();
+		$patterns[0] = '/&nbsp;/';
+		$replacements = array();
+		$replacements[0] = '';
+		$product['price'] =  preg_replace($patterns, $replacements, $matches[1]);
+	  	return $product;
+	}
+
+
+	function getCategoryId($product){
+		global  $parent_id;
+		foreach ($this->aCategory as $cat){
+			if ($cat['name'] == $product['categoryName']){
+				return $cat['id'];
+			}
+		}
+		$catData = [
+			'parent_id' => $parent_id,
+			'name' => $product['categoryName'],
+			'txt' => '',
+		];
+		insertCategory($catData);
+		preg_match('/([а-яёА-Я]+)-\d+/', $product['sku'], $matches);
+		array_push($this->aCategory, [
+				'name' => $product['categoryName'],
+				'id' => $catData['category_id'],
+				'charSku' => $matches[1]
+			]);
+		// echo "aCatData == ";
+		// print_r($catData);
+		// echo "\n";	
+		// echo "aCategory == ";	
+		// print_r($aCategory);
+		// echo "\n";		
+		return $catData['category_id'];
+	}
+
+
+	function parseCatalog($url){
+		$html = file_get_html($url);
+
+		foreach($html->find('.item') as $div){
+			$h4 = $div->find('h4', 0);
+			$a = $h4->find('a', 0);
+			$product = $this->parseSet('http://www.rukodelie.ru'.$a->href);
+			if ($this->checkSku($product)){
+				$product['idManufacturer'] = $this->manufacturerId;
+				$product['idCategory'] = $this->categoryId;  //$this->getCategoryId($product);
+				echo "product == ";
+				print_r($product);
+				$this->insertProduct($product);
+			}
+		}
+	}
+	
+
+	function parseCategory($url){
+		$html = file_get_html($url);
+
+		foreach($html->find('.bx_filter_parameters_box_container') as $div){
+			foreach ($div->find('span') as $span) {
+				echo trim($span->plaintext)."\n";	
+			}
+		}
+	}
+
+
+    public function sku_1c(){
+        $f = fopen("db/gold.spr", "r");
+        if ($f) {
+            while (($str = fgets($f)) !== false) {
+                $str = iconv("CP1251", "UTF-8", $str);
+                $a = split(';', $str);
+                if (count($a) == 18){
+                    $id1c = $a[0];
+                    $name = $a[2]; 
+                    //echo $id1c." ".$name."\n";                  
+                    preg_match('/([а-яА-ЯёЁ]+-\d+)\s+/', $name, $matches);
+                    if (!empty($matches[1])){
+                       $sku = $matches[1]; 
+                       echo "[ 'id1c' => ".$id1c.", 'sku' => '".$sku."' ],\n";
+                    }                    
+                }
+            }
+            if (!feof($f)) {
+                echo "Error: unexpected fgets() fail\n";
+            }
+            fclose($f);
+        }
+    }
+
+    *****************************/

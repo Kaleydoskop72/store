@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2017-03-01 03:43">
+
+<shop>
+<name>ТканиРукоделие</name>
+<company>Ткани, пряжа, наборы для вышивания</company>
+<url>http://tkanirukodelie.ru/</url>
+
+<currencies>
+    <currency id="RUR" rate="1"/>
+</currencies>
+<categories>
+<category id="16126">Наборы для вышивания</category>
+<category id="454" parentId="16126">Риолис</category>
+<category id="544" parentId="16126">Золотое Руно</category>
+<category id="3108" parentId="16126">Кроше (бисер)</category>
+<category id="17037" parentId="16126">Алиса</category>
+<category id="18988" parentId="16126">Паутинка (бисер)</category>
+<category id="19569" parentId="16126">Паутинка (алмазная живопись)</category>
+</categories>
+<delivery-options>
+  <option cost="200" days="1-2"/>
+</delivery-options>
+<cpa>0</cpa>
+<offers>
+    <offer id="1113" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/zaznoba_moya-1113</url>
+        <price>890</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1113/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Зазноба моя</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида белая 16</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1152" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/vaza_s_fruktami-1152</url>
+        <price>1950</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1152/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Ваза с фруктами</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида кремовая 18</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1156" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/karmen-1156</url>
+        <price>995</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1156/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Кармен</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида кремовая 14</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1159" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/utro-1159</url>
+        <price>970</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1159/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Утро</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида белая 16</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1167" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/lesnye_khishchniki-1167</url>
+        <price>1440</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1167/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Лесные хищники</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида кремовая 16</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1172" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/medvezhiy_kray-1172</url>
+        <price>1950</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1172/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Медвежий край</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида кремовая 16</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1173" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/ryzhaya_semeyka-1173</url>
+        <price>2200</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1173/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Рыжая семейка</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида белая 16</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1185" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/moya_golubka-1185</url>
+        <price>1040</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1185/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Моя голубка</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида черная 14</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1186" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/idealnaya_para-1186</url>
+        <price>1250</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1186/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Идеальная пара</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида серо-голубая 16</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1200" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/belaya_vyuga-1200</url>
+        <price>1380</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1200/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Белая вьюга</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида голубая 16</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1216" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/belye_lebedi-1216</url>
+        <price>1400</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1216/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Белые лебеди</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида белая 16</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1217" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/lebedinnoe_ozero-1217</url>
+        <price>1390</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1217/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Лебединное озеро</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида кремовая 16</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1234" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/buket_belykh_roz-1234</url>
+        <price>1550</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1234/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Букет белых роз</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида белая 18</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 1 нить</param>
+    </offer>
+    <offer id="1264" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/vsadnitsa-1264</url>
+        <price>3955</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1264/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Всадница</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида кремова 18</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1267" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/italyanskiy_polden-1267</url>
+        <price>1930</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1267/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Итальянский полдень</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида кремовая 18</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 1 нить</param>
+    </offer>
+    <offer id="1269" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/letnyaya_roza-1269</url>
+        <price>1850</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1269/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Летняя роза</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида кремовая 16</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1312" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/utro_v_sosnovom_boru-1312</url>
+        <price>4990</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1312/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Утро в сосновом бору</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида кремовая 18</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1322" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/snegiri-1322</url>
+        <price>1250</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1322/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Снегири</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида белая 16</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1388" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/utrennyaya_progulka-1388</url>
+        <price>1790</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1388/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Утренняя прогулка</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида кремовая 18</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 1 нить</param>
+    </offer>
+    <offer id="1397" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/debyut-1397</url>
+        <price>1150</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1397/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Дебют</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида белая 18</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 1 нити</param>
+    </offer>
+    <offer id="1398" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/progulka-1398</url>
+        <price>1550</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1398/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Прогулка</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида белая 18</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 1 и 2 нити</param>
+    </offer>
+    <offer id="1400" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/tanets_lyubvi-1400</url>
+        <price>1790</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1400/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Танец любви</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида белая 16</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="1402" available="true">
+        <url>http://tkanirukodelie.ru/zolotoe_runo-544/ekh_zaletnye-1402</url>
+        <price>1930</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>544</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p1402/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Золотое руно Эх залетные</name>
+        <vendor>Золотое руно</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва">Аида белая 16</param>
+        <param name="Количество цветов">0</param>
+        <param name="Техника вышивания">Вышивается крестом в 2 нити</param>
+    </offer>
+    <offer id="5478" available="true">
+        <url>http://tkanirukodelie.ru/riolis-454/shokoladnitsa-5478</url>
+        <price>2290</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>454</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p5478/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Riolis Шоколадница</name>
+        <vendor>riolis</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва"> 14 Aida Zweigart белая</param>
+        <param name="Количество цветов">29</param>
+        <param name="Игла"> 1 вид</param>
+        <param name="Нитки"> мулине Anchor</param>
+        <param name="Размер упаковки"> 225 x 285 x 3 см</param>
+    </offer>
+    <offer id="5493" available="true">
+        <url>http://tkanirukodelie.ru/riolis-454/v_luchakh_zakata-5493</url>
+        <price>2990</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>454</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p5493/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Riolis В лучах заката</name>
+        <vendor>riolis</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва"> 14 Aida Zweigart белая</param>
+        <param name="Количество цветов">27</param>
+        <param name="Игла"> 2 вида</param>
+        <param name="Нитки"> мулине Anchor</param>
+        <param name="Размер упаковки"> 225 x 285 x 3 см</param>
+    </offer>
+    <offer id="5502" available="true">
+        <url>http://tkanirukodelie.ru/riolis-454/pastoral-5502</url>
+        <price>2850</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>454</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p5502/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Riolis Пастораль</name>
+        <vendor>riolis</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва"> 14 Aida Zweigart цветная</param>
+        <param name="Количество цветов">31</param>
+        <param name="Игла"> 1 вид</param>
+        <param name="Нитки"> мулине Anchor</param>
+        <param name="Размер упаковки"> 225 x 285 x 3 см</param>
+    </offer>
+    <offer id="5550" available="true">
+        <url>http://tkanirukodelie.ru/riolis-454/ryabina-5550</url>
+        <price>870</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>454</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p5550/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Riolis Рябина</name>
+        <vendor>riolis</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва"> 15 Aida Zweigart цветная</param>
+        <param name="Количество цветов">19</param>
+        <param name="Игла"> 1 вид</param>
+        <param name="Нитки"> шерсть</param>
+        <param name="Размер упаковки"> 21 x 267 x 14 см</param>
+    </offer>
+    <offer id="5561" available="true">
+        <url>http://tkanirukodelie.ru/riolis-454/tabun_loshadey-5561</url>
+        <price>2100</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>454</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p5561/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Riolis Табун лошадей</name>
+        <vendor>riolis</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва"> 14 Aida Zweigart белая</param>
+        <param name="Количество цветов">23</param>
+        <param name="Игла"> 1 вид</param>
+        <param name="Нитки"> шерстьакрил Safil  мулине Anchor</param>
+        <param name="Размер упаковки"> 21 x 27 x 4 см</param>
+    </offer>
+    <offer id="5647" available="true">
+        <url>http://tkanirukodelie.ru/riolis-454/zolotaya_roshcha-5647</url>
+        <price>1700</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>454</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p5647/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Riolis Золотая роща</name>
+        <vendor>riolis</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва"> 10 Aida Zweigart белая</param>
+        <param name="Количество цветов">26</param>
+        <param name="Игла"> 1 вид</param>
+        <param name="Нитки"> шерсть</param>
+        <param name="Размер упаковки"> 23 x 28 x 3 см</param>
+    </offer>
+    <offer id="5726" available="true">
+        <url>http://tkanirukodelie.ru/riolis-454/piony_v_vaze-5726</url>
+        <price>730</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>454</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p5726/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Riolis Пионы в вазе</name>
+        <vendor>riolis</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва"> 10 Aida Zweigart белая</param>
+        <param name="Количество цветов">27</param>
+        <param name="Игла"> 1 вид</param>
+        <param name="Нитки"> шерсть</param>
+        <param name="Размер упаковки"> 21 x 27 x 2 см</param>
+    </offer>
+    <offer id="5728" available="true">
+        <url>http://tkanirukodelie.ru/riolis-454/tsar_zverey-5728</url>
+        <price>1550</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>454</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p5728/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Riolis Царь зверей</name>
+        <vendor>riolis</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва"> 10 Aida Zweigart цветная</param>
+        <param name="Количество цветов">20</param>
+        <param name="Игла"> 1 вид</param>
+        <param name="Нитки"> шерсть</param>
+        <param name="Размер упаковки"> 21 x 27 x 4 см</param>
+    </offer>
+    <offer id="5867" available="true">
+        <url>http://tkanirukodelie.ru/riolis-454/buket_gladiolusov-5867</url>
+        <price>690</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>454</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p5867/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Riolis Букет гладиолусов</name>
+        <vendor>riolis</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва"> 14 Aida Zweigart белая</param>
+        <param name="Количество цветов">18</param>
+        <param name="Игла"> 1 вид</param>
+        <param name="Нитки"> шерстьакрил Safil</param>
+        <param name="Размер упаковки"> 21 x 265 x 1 см</param>
+    </offer>
+    <offer id="5868" available="true">
+        <url>http://tkanirukodelie.ru/riolis-454/nezhnaya_siren-5868</url>
+        <price>650</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>454</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p5868/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Riolis Нежная сирень</name>
+        <vendor>riolis</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва"> 14 Aida Zweigart цветная</param>
+        <param name="Количество цветов">19</param>
+        <param name="Игла"> 1 вид</param>
+        <param name="Нитки"> мулине Anchor</param>
+        <param name="Размер упаковки"> 21 x 268 x 07 см</param>
+    </offer>
+    <offer id="5869" available="true">
+        <url>http://tkanirukodelie.ru/riolis-454/malina_v_lukoshke-5869</url>
+        <price>590</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>454</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p5869/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Riolis Малина в лукошке</name>
+        <vendor>riolis</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва"> 10 Aida Zweigart лён</param>
+        <param name="Количество цветов">22</param>
+        <param name="Игла"> 1 вид</param>
+        <param name="Нитки"> шерстьакрил Safil</param>
+        <param name="Размер упаковки"> 21 x 268 x 08 см</param>
+    </offer>
+    <offer id="5893" available="true">
+        <url>http://tkanirukodelie.ru/riolis-454/russkie_romashki-5893</url>
+        <price>550</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>454</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p5893/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Riolis Русские ромашки</name>
+        <vendor>riolis</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва"> 14 Aida Zweigart лён</param>
+        <param name="Количество цветов">25</param>
+        <param name="Игла"> 1 вид</param>
+        <param name="Нитки"> шерстьакрил Safil</param>
+        <param name="Размер упаковки"> 21 x 27 x 08 см</param>
+    </offer>
+    <offer id="5901" available="true">
+        <url>http://tkanirukodelie.ru/riolis-454/zharkoe_leto-5901</url>
+        <price>790</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>454</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p5901/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Riolis Жаркое лето</name>
+        <vendor>riolis</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва"> 14 Aida Zweigart белая</param>
+        <param name="Количество цветов">26</param>
+        <param name="Игла"> 1 вид</param>
+        <param name="Нитки"> шерстьакрил Safil</param>
+        <param name="Размер упаковки"> 21 x 27 x 12 см</param>
+    </offer>
+    <offer id="5914" available="true">
+        <url>http://tkanirukodelie.ru/riolis-454/derevenskiy_polden-5914</url>
+        <price>1600</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>454</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p5914/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Riolis Деревенский полдень</name>
+        <vendor>riolis</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва"> 14 Aida Zweigart белая</param>
+        <param name="Количество цветов">29</param>
+        <param name="Игла"> 1 вид</param>
+        <param name="Нитки"> шерстьакрил Safil</param>
+        <param name="Размер упаковки"> 21 x 27 x 21 см</param>
+    </offer>
+    <offer id="5940" available="true">
+        <url>http://tkanirukodelie.ru/riolis-454/siren_posle_dozhdya-5940</url>
+        <price>1100</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>454</categoryId>
+        <picture>http://tkanirukodelie.ru/image/cache/data/product/p5940/0-1024x800.jpg</picture>
+        <store>true</store>
+        <delivery>true</delivery>
+        <pickup>true</pickup>
+        <name>набор для вышивания  Riolis Сирень после дождя</name>
+        <vendor>riolis</vendor>
+        <model></model>
+        <age>0</age>
+        <manufacturer_warranty>false</manufacturer_warranty>
+        <param name="Тип">набор для вышивания</param>
+        <param name="Канва"> 10 Aida Zweigart цветная</param>
+        <param name="Количество цветов">17</param>
+        <param name="Игла"> 1 вид</param>
+        <param name="Нитки"> шерстьакрил Safil</param>
+        <param name="Размер упаковки"> 21 x 27 x 19 см</param>
+    </offer>
+</offers>
+</shop>
+</yml_catalog>

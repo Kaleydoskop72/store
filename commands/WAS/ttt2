@@ -1,0 +1,180 @@
+			sku == 0061 РТ 1/РТ/0061
+			sku == 0062 РТ 1/РТ/0062
+			sku == 0063 РТ 1/РТ/0063
+			sku == 1106 2/1106
+			sku == 1107 2/1107
+			sku == 1108 2/1108
+			sku == 1110 2/1110
+			sku == 1111 2/1111
+			sku == 1158 2/1158
+			sku == 1164 2/1164
+			sku == 1165 2/1165
+			sku == 1174 2/1174
+			sku == 1175 2/1175
+			sku == 1220 2/1220
+			sku == 1221 2/1221
+			sku == 1251 2/1251
+			sku == 1263 2/1263
+!!! Error: sku == 1263 name == "Апельсин" no found Id1c 
+			sku == 1285АС 2/1285
+!!! Error: sku == 1285АС name == "Брелок "Котенок"" no found Id1c 
+			sku == 1287АС 2/1287
+!!! Error: sku == 1287АС name == "Брелок "Машинка"" no found Id1c 
+			sku == 1289 2/1289
+			sku == 1297АС 2/1297
+!!! Error: sku == 1297АС name == "Брошь "Бабочка"" no found Id1c 
+			sku == 1298АС 2/1298
+!!! Error: sku == 1298АС name == "Брошь "Роза"" no found Id1c 
+			sku == 1310 2/1310
+			sku == 1311 2/1311
+			sku == 1315 2/1315
+			sku == 1317 2/1317
+!!! Error: sku == 1317 name == "Мороженое" no found Id1c 
+			sku == 1318 2/1318
+			sku == 1319 2/1319
+!!! Error: sku == 1319 name == "Воздушные одуванчики" no found Id1c 
+			sku == 1320 2/1320
+			sku == 1321 2/1321
+			sku == 1337АС 2/1337
+			sku == 1338АС 2/1338
+			sku == 1339АС 2/1339
+!!! Error: sku == 1339АС name == "Очечник/пенал "Жираф"" no found Id1c 
+			sku == 1342АС 2/1342
+			sku == 1344АС 2/1344
+!!! Error: sku == 1344АС name == "Клипсы и перстень "Розочки"" no found Id1c 
+			sku == 1345АС 2/1345
+!!! Error: sku == 1345АС name == "Колье "Капли"" no found Id1c 
+			sku == 1346АС 2/1346
+!!! Error: sku == 1346АС name == "Серьги и колье "Наутилус"" no found Id1c 
+			sku == 1353 2/1353
+			sku == 1354 2/1354
+			sku == 1376АС 2/1376
+!!! Error: sku == 1376АС name == "Зайчик" no found Id1c 
+			sku == 1377АС 2/1377
+!!! Error: sku == 1377АС name == "Цыплята" no found Id1c 
+			sku == 1379АС 2/1379
+			sku == 1392 2/1392
+			sku == 1395АС 2/1395
+!!! Error: sku == 1395АС name == "Брошь "На счастье"" no found Id1c 
+			sku == 1405 2/1405
+			sku == 1407АС 2/1407
+!!! Error: sku == 1407АС name == "Солнечная бабочка" no found Id1c 
+			sku == 1408АС 2/1408
+!!! Error: sku == 1408АС name == "Божья коровка" no found Id1c 
+			sku == 1410АС 2/1410
+!!! Error: sku == 1410АС name == "Брошь "Морская звездочка"" no found Id1c 
+			sku == 1411АС 2/1411
+!!! Error: sku == 1411АС name == "Браслет и серьги "Серебро"" no found Id1c 
+			sku == 1412АС 2/1412
+!!! Error: sku == 1412АС name == "Колье и серьги "Восточная сказка"" no found Id1c 
+			sku == 1422АС 2/1422
+!!! Error: sku == 1422АС name == "Колье "Голубая лагуна"" no found Id1c 
+			sku == 1440АС 2/1440
+!!! Error: sku == 1440АС name == "Брелок "Пчелочка"" no found Id1c 
+			sku == 1442АС 2/1442
+!!! Error: sku == 1442АС name == ""Снежок" овечка" no found Id1c 
+			sku == 1444АС 2/1444
+			sku == 1445АС 2/1445
+			sku == 1460 2/1460
+!!! Error: sku == 1460 name == "Овечка Снегурочка" no found Id1c 
+			sku == 1475АС 2/1475
+			sku == 1482АС 2/1482
+!!! Error: sku == 1482АС name == "Зеленое яблочко" no found Id1c 
+			sku == 1492АС 2/1492
+!!! Error: sku == 1492АС name == "Кошелек "Земляничка"" no found Id1c 
+			sku == 1493АС 2/1493
+			sku == 1512АС 2/1512
+!!! Error: sku == 1512АС name == "Самая обаятельная" no found Id1c 
+			sku == 1526 2/1526
+			sku == 1555АС 2/1555
+!!! Error: sku == 1555АС name == "Малыш" no found Id1c 
+			sku == 1583АС 2/1583
+!!! Error: sku == 1583АС name == "Петух" no found Id1c 
+			sku == 1602АС 2/1602
+!!! Error: sku == 1602АС name == "Подвеска "Счастливый клевер"" no found Id1c 
+Error: sku == Б017 / name == "Браслет витой"no detect sku!
+!!! Error: sku == Б017 name == "Браслет витой" no found Id1c 
+Error: sku == Б018 / name == "Браслет с цветами"no detect sku!
+!!! Error: sku == Б018 name == "Браслет с цветами" no found Id1c 
+Error: sku == Б026 / name == "Пчела"no detect sku!
+!!! Error: sku == Б026 name == "Пчела" no found Id1c 
+Error: sku == Б033 / name == "Кот"no detect sku!
+!!! Error: sku == Б033 name == "Кот" no found Id1c 
+Error: sku == Б044 / name == "Бабочка"no detect sku!
+!!! Error: sku == Б044 name == "Бабочка" no found Id1c 
+Error: sku == Б055 / name == "Божья коровка"no detect sku!
+!!! Error: sku == Б055 name == "Божья коровка" no found Id1c 
+Error: sku == Б057 / name == "Мышка"no detect sku!
+!!! Error: sku == Б057 name == "Мышка" no found Id1c 
+Error: sku == Б065 / name == "Ангелочек"no detect sku!
+!!! Error: sku == Б065 name == "Ангелочек" no found Id1c 
+Error: sku == Б069 / name == "Смородина"no detect sku!
+!!! Error: sku == Б069 name == "Смородина" no found Id1c 
+Error: sku == Б071 / name == "Вишенки"no detect sku!
+!!! Error: sku == Б071 name == "Вишенки" no found Id1c 
+Error: sku == Б099 / name == "Рыбка"no detect sku!
+!!! Error: sku == Б099 name == "Рыбка" no found Id1c 
+Error: sku == Б132 / name == "Браслет с мотыльками"no detect sku!
+!!! Error: sku == Б132 name == "Браслет с мотыльками" no found Id1c 
+Error: sku == Б137 / name == "Брелок "Сердечко""no detect sku!
+!!! Error: sku == Б137 name == "Брелок "Сердечко"" no found Id1c 
+Error: sku == Б139 / name == "Малинка"no detect sku!
+!!! Error: sku == Б139 name == "Малинка" no found Id1c 
+Error: sku == Б140 / name == "Виноград"no detect sku!
+!!! Error: sku == Б140 name == "Виноград" no found Id1c 
+Error: sku == Б151 / name == "Брелок "Зайчик с букетом""no detect sku!
+!!! Error: sku == Б151 name == "Брелок "Зайчик с букетом"" no found Id1c 
+Error: sku == Б154 / name == "Брелок "Фонарик""no detect sku!
+!!! Error: sku == Б154 name == "Брелок "Фонарик"" no found Id1c 
+Error: sku == Б160 / name == "Брелок "Арбузик""no detect sku!
+!!! Error: sku == Б160 name == "Брелок "Арбузик"" no found Id1c 
+Error: sku == Б166 / name == "Алое сердечко"no detect sku!
+!!! Error: sku == Б166 name == "Алое сердечко" no found Id1c 
+Error: sku == Б168 / name == "Волшебная бабочка"no detect sku!
+!!! Error: sku == Б168 name == "Волшебная бабочка" no found Id1c 
+Error: sku == Б174 / name == "Браслет"no detect sku!
+!!! Error: sku == Б174 name == "Браслет" no found Id1c 
+Error: sku == Б175 / name == "Ангел"no detect sku!
+!!! Error: sku == Б175 name == "Ангел" no found Id1c 
+Error: sku == Б177 / name == "Брошь"Желуди""no detect sku!
+!!! Error: sku == Б177 name == "Брошь"Желуди"" no found Id1c 
+Error: sku == Б179 / name == "Брелок "Конек""no detect sku!
+!!! Error: sku == Б179 name == "Брелок "Конек"" no found Id1c 
+Error: sku == Б180 / name == "Объемная фигурка "Волшебная лошадка""no detect sku!
+!!! Error: sku == Б180 name == "Объемная фигурка "Волшебная лошадка"" no found Id1c 
+Error: sku == Б182 / name == "Тюльпан"no detect sku!
+!!! Error: sku == Б182 name == "Тюльпан" no found Id1c 
+Error: sku == В187 / name == "Пингвиненок с рыбкой"no detect sku!
+!!! Error: sku == В187 name == "Пингвиненок с рыбкой" no found Id1c 
+Error: sku == В188 / name == "Обьемная фигурка "Кудряшка""no detect sku!
+!!! Error: sku == В188 name == "Обьемная фигурка "Кудряшка"" no found Id1c 
+Error: sku == В190 / name == "Браслет"no detect sku!
+!!! Error: sku == В190 name == "Браслет" no found Id1c 
+Error: sku == В192 / name == "Браслет"no detect sku!
+!!! Error: sku == В192 name == "Браслет" no found Id1c 
+Error: sku == В193 / name == "Закладка "Огород""no detect sku!
+!!! Error: sku == В193 name == "Закладка "Огород"" no found Id1c 
+Error: sku == В196 / name == "Мухомор"no detect sku!
+!!! Error: sku == В196 name == "Мухомор" no found Id1c 
+Error: sku == В197 / name == "Объемная фигурка "Лимпопо""no detect sku!
+!!! Error: sku == В197 name == "Объемная фигурка "Лимпопо"" no found Id1c 
+Error: sku == В198 / name == "Островитянка"no detect sku!
+!!! Error: sku == В198 name == "Островитянка" no found Id1c 
+Error: sku == В199 / name == "Закладка "Поэма""no detect sku!
+!!! Error: sku == В199 name == "Закладка "Поэма"" no found Id1c 
+Error: sku == В200 / name == "Закладка "В школу""no detect sku!
+!!! Error: sku == В200 name == "Закладка "В школу"" no found Id1c 
+Error: sku == В201 / name == "Новогоднее украшение "Остролист""no detect sku!
+!!! Error: sku == В201 name == "Новогоднее украшение "Остролист"" no found Id1c 
+Error: sku == В202 / name == "Брелок "Мак""no detect sku!
+!!! Error: sku == В202 name == "Брелок "Мак"" no found Id1c 
+Error: sku == В203 / name == "Ландыши"no detect sku!
+!!! Error: sku == В203 name == "Ландыши" no found Id1c 
+Error: sku == В205 / name == "Подвеска "Бургундия""no detect sku!
+!!! Error: sku == В205 name == "Подвеска "Бургундия"" no found Id1c 
+Error: sku == В207 / name == "Брелок "Петя-петушок""no detect sku!
+!!! Error: sku == В207 name == "Брелок "Петя-петушок"" no found Id1c 
+Error: sku == В208 / name == "Закладка "Кораблик""no detect sku!
+!!! Error: sku == В208 name == "Закладка "Кораблик"" no found Id1c 
+Error: sku == В209 / name == "Незабудки"no detect sku!
+!!! Error: sku == В209 name == "Незабудки" no found Id1c 

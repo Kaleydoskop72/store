@@ -1,0 +1,249 @@
+BadProductController.php:        return $this->render('ok');        
+BadProductController.php:        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+BadProductController.php:        return $this->render('index', [
+BadProductController.php:        return $this->render('view', [
+BadProductController.php:            'model' => $this->findModel($id),
+BadProductController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+BadProductController.php:            return $this->redirect(['view', 'id' => $model->idProduct]);
+BadProductController.php:            return $this->render('create', [
+BadProductController.php:        $model = $this->findModel($id);
+BadProductController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+BadProductController.php:            return $this->redirect(['view', 'id' => $model->idProduct]);
+BadProductController.php:            return $this->render('update', [
+BadProductController.php:        $this->findModel($id)->delete();
+BadProductController.php:        return $this->redirect(['index']);
+CategoryController.php:        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+CategoryController.php:        return $this->render('index', [
+CategoryController.php:        return $this->render('view', [
+CategoryController.php:            'model' => $this->findModel($id),
+CategoryController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+CategoryController.php:            return $this->redirect(['index']);
+CategoryController.php:            return $this->render('create', [
+CategoryController.php:        $model = $this->findModel($id);
+CategoryController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+CategoryController.php:            return $this->redirect(['index']);
+CategoryController.php:            return $this->render('update', [
+CategoryController.php:        $this->findModel($id)->delete();
+CategoryController.php:        return $this->redirect(['index']);
+ColorController.php:        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+ColorController.php:        return $this->render('index', [
+ColorController.php:        return $this->render('view', [
+ColorController.php:            'model' => $this->findModel($id),
+ColorController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+ColorController.php:            //return $this->redirect(['view', 'id' => $model->id]);
+ColorController.php:            return $this->actionIndex();
+ColorController.php:            return $this->render('create', [
+ColorController.php:        $model = $this->findModel($id);
+ColorController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+ColorController.php:            // return $this->redirect(['view', 'id' => $model->id]);
+ColorController.php:            return $this->actionIndex();            
+ColorController.php:            return $this->render('update', [
+ColorController.php:        $this->findModel($id)->delete();
+ColorController.php:        return $this->redirect(['index']);
+CountryController.php:        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+CountryController.php:        return $this->render('index', [
+CountryController.php:        return $this->render('view', [
+CountryController.php:            'model' => $this->findModel($id),
+CountryController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+CountryController.php:            return $this->redirect(['view', 'id' => $model->id]);
+CountryController.php:            return $this->render('create', [
+CountryController.php:        $model = $this->findModel($id);
+CountryController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+CountryController.php:            return $this->redirect(['view', 'id' => $model->id]);
+CountryController.php:            return $this->render('update', [
+CountryController.php:        $this->findModel($id)->delete();
+CountryController.php:        return $this->redirect(['index']);
+DesignController.php:        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+DesignController.php:        return $this->render('index', [
+DesignController.php:        return $this->render('view', [
+DesignController.php:            'model' => $this->findModel($id),
+DesignController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+DesignController.php:            return $this->actionIndex();
+DesignController.php:            //return $this->redirect(['view', 'id' => $model->id]);
+DesignController.php:            return $this->render('create', [
+DesignController.php:        $model = $this->findModel($id);
+DesignController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+DesignController.php:            return $this->actionIndex();            
+DesignController.php:            //return $this->redirect(['view', 'id' => $model->id]);
+DesignController.php:            return $this->render('update', [
+DesignController.php:        $this->findModel($id)->delete();
+DesignController.php:        return $this->redirect(['index']);
+KitCategoryController.php:        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+KitCategoryController.php:        return $this->render('index', [
+KitCategoryController.php:        return $this->render('view', [
+KitCategoryController.php:            'model' => $this->findModel($id),
+KitCategoryController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+KitCategoryController.php:            return $this->redirect(['index']);
+KitCategoryController.php:            return $this->render('create', [
+KitCategoryController.php:        $model = $this->findModel($id);
+KitCategoryController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+KitCategoryController.php:            return $this->redirect(['index']);
+KitCategoryController.php:            return $this->render('update', [
+KitCategoryController.php:        $this->findModel($id)->delete();
+KitCategoryController.php:        return $this->redirect(['index']);
+ManufacturerController.php:        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+ManufacturerController.php:        return $this->render('index', [
+ManufacturerController.php:        return $this->render('view', [
+ManufacturerController.php:            'model' => $this->findModel($id),
+ManufacturerController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+ManufacturerController.php:            return $this->redirect(['view', 'id' => $model->id]);
+ManufacturerController.php:            return $this->render('create', [
+ManufacturerController.php:        $model = $this->findModel($id);
+ManufacturerController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+ManufacturerController.php:            return $this->redirect(['view', 'id' => $model->id]);
+ManufacturerController.php:            return $this->render('update', [
+ManufacturerController.php:        $this->findModel($id)->delete();
+ManufacturerController.php:        return $this->redirect(['index']);
+ProductController.php:        $idP = ($idP == -1) ? '-' : $idP;
+ProductController.php:        $idC = ($idC == -1) ? '-' : $idC;        
+ProductController.php:        $idImage = ($idImage == -1) ? '-' : $idImage;        
+ProductController.php:        $fp = fopen($this->filePhotoData, 'w');
+ProductController.php:        $handle = fopen($this->filePhotoData, "r");
+ProductController.php:        $str = fread($handle, filesize($this->filePhotoData));
+ProductController.php:        preg_match("/([-\d]+);([-\d]+);([-\d]+)/", $str, $matches); 
+ProductController.php:        $idP = ($idP == '-') ? NULL : $idP;
+ProductController.php:        $idC = ($idC == '-') ? NULL : $idC;        
+ProductController.php:        $idImage = ($idImage == '-') ? NULL : $idImage;         
+ProductController.php:        $path = $this->dirImage."/p".$id;        
+ProductController.php:        $aActions = [ 'photo-do', 'uploadmain', 'uploadmore', 'uploadmore2', 'uploadmore3', 
+ProductController.php:            'update-kit-category', 'color-set', 'color-get', 'design-set', 'design-get' ];
+ProductController.php:            if ($action->id === $a){
+ProductController.php:                $this->enableCsrfValidation = false;
+ProductController.php:        $product->colors = $colors;
+ProductController.php:        $product->save();
+ProductController.php:        $product->designs = $designs;
+ProductController.php:        $product->save();
+ProductController.php:        $this->dirImage      = \Yii::$app->params['dirImage'];
+ProductController.php:        $this->filePhotoData = $this->dirImage."/photoData.txt";
+ProductController.php:        $this->photoDataSet($idP, $idC, $idImage); 
+ProductController.php:        // if ($idP == -1 && $idC == -1){
+ProductController.php:        //     $this->photoDataSet(NULL, NULL, NULL);
+ProductController.php:        //     if ($idP != -1 && $idC == -1){
+ProductController.php:        //         $this->photoDataSet($idP, NULL, $idImage);
+ProductController.php:        //         $this->photoDataSet($idP, $idC, $idImage);                
+ProductController.php:                case 0: $product->isImageMain  = 0; break;
+ProductController.php:                case 1: $product->isImageMore  = 0; break;       
+ProductController.php:                case 2: $product->isImageMore2 = 0; break;
+ProductController.php:                case 3: $product->isImageMore3 = 0; break;                           
+ProductController.php:            $product->save();
+ProductController.php:        $filename = \Yii::$app->params['dirImage'].'p'.$product->id.'/'.$idImage.'.jpg'; 
+ProductController.php:        $this->dirImage     = \Yii::$app->params['dirImage'];
+ProductController.php:        $this->filePhotoData = $this->dirImage."/photoData.txt";
+ProductController.php:        $fileTmp = $this->dirImage."/tmp.jpg";
+ProductController.php:        $this->photoDataGet($idP, $idC, $idImage);  
+ProductController.php:        $this->photoCheckDir($idC);
+ProductController.php:        $this->fileDst = $this->dirImage;
+ProductController.php:        $this->fileDst .= "/p".$idC."/";        
+ProductController.php:            $this->fileDst = $this->fileDst.$fileName;
+ProductController.php:            //exec("convert $fileTmp  $this->fileDst");
+ProductController.php:            // exec("convert $fileTmp -pointsize 128  -thumbnail 1024  -fill white -filter Triangle -define filter:support=2  -unsharp 0.25x0.25+8+0.065 -dither  None -posterize 136 -quality 92 -define jpeg:fancy-upsampling=off -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB -strip $this->fileDst");  
+ProductController.php:            // system("mv ".$fileTmp." ".$this->fileDst);
+ProductController.php:            rename($fileTmp, $this->fileDst);
+ProductController.php:                $product->isImageMain = 1;
+ProductController.php:                $product->isImageMore = 1;                           
+ProductController.php:            if ($product->save()){
+ProductController.php:        $model = $this->findModel($id);
+ProductController.php:        $model->idKitCategory = $idKitCategory;
+ProductController.php:        $model->save();
+ProductController.php:        $dataProvider = $searchModel->search(Yii::$app->request->queryParams, 0);
+ProductController.php:        return $this->render('index', [
+ProductController.php:        $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $idParent);
+ProductController.php:        return $this->render('index', [
+ProductController.php:        $dataProvider = $searchModel->search2(Yii::$app->request->queryParams);
+ProductController.php:        return $this->render('index2', [
+ProductController.php:        return $this->render('view', [
+ProductController.php:            'model' => $this->findModel($id),
+ProductController.php:        $model->initNew();
+ProductController.php:        if ($model->load(Yii::$app->request->post())) {
+ProductController.php:            if (empty($model->idCategory)){
+ProductController.php:                $model->idCategory = 0;
+ProductController.php:            if (empty($model->idManufacturer)){
+ProductController.php:                $model->idManufacturer = 0;
+ProductController.php:            if (empty($model->idKitCategory)){
+ProductController.php:                $model->idKitCategory = 0;
+ProductController.php:            if (empty($model->colorCode)){
+ProductController.php:                $model->colorCode = 0;
+ProductController.php:            $model->save();
+ProductController.php:            return $this->redirect(['index']);
+ProductController.php:            return $this->render('create', [
+ProductController.php:        $model = $this->findModel($id);
+ProductController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+ProductController.php:            return $this->redirect(['index']);
+ProductController.php:            return $this->render('update', [
+ProductController.php:            $this->uploadPhoto($id, $_FILES['file'], 0);           
+ProductController.php:            $this->uploadPhoto($id, $_FILES['file'], 1);           
+ProductController.php:            $this->uploadPhoto($id, $_FILES['file'], 2);           
+ProductController.php:            $this->uploadPhoto($id, $_FILES['file'], 3);           
+ProductController.php:        $this->dirImage     = \Yii::$app->params['dirImage'];
+ProductController.php:        $this->photoCheckDir($id);       
+ProductController.php:        $targetFile = $this->dirImage.'p'.$id.'/';         
+ProductController.php:            exec("convert $targetFile -pointsize 128  -thumbnail 1024  -fill white -filter Triangle -define filter:support=2  -unsharp 0.25x0.25+8+0.065 -dither  None -posterize 136 -quality 92 -define jpeg:fancy-upsampling=off -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB -strip ".$targetFile.'_s');   
+ProductController.php:                $product->isImageMain = 1; break;
+ProductController.php:                $product->isImageMore = 1; break;
+ProductController.php:                $product->isImageMore2 = 1; break;              
+ProductController.php:                $product->isImageMore3 = 1; break;                                
+ProductController.php:        //     $product->isImageMain = 1;
+ProductController.php:        //     $product->isImageMore = 1;            
+ProductController.php:        if (!$product->save()){
+ProductController.php:            Yii::info(print_r($product->getErrors()), 'info');
+ProductController.php:        $this->findModel($id)->delete();
+ProductController.php:        return $this->redirect(['index']);
+ProductKitController.php:        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+ProductKitController.php:        return $this->render('index', [
+ProductKitController.php:        return $this->render('view', [
+ProductKitController.php:            'model' => $this->findModel($id),
+ProductKitController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+ProductKitController.php:            return $this->redirect(['view', 'id' => $model->id]);
+ProductKitController.php:            return $this->render('create', [
+ProductKitController.php:        $model = $this->findModel($id);
+ProductKitController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+ProductKitController.php:            return $this->redirect(['view', 'id' => $model->id]);
+ProductKitController.php:            return $this->render('update', [
+ProductKitController.php:        $this->findModel($id)->delete();
+ProductKitController.php:        return $this->redirect(['index']);
+ServiceController.php:        $model = $this->findModel(1);
+ServiceController.php:        $model->load(Yii::$app->request->post());
+ServiceController.php:        $model->save();
+ServiceController.php:        return $this->render('settings', [
+ServiceController.php:        if (Yii::$app->request->isPost) {
+ServiceController.php:            $model->importFile = UploadedFile::getInstance($model, 'importFile');
+ServiceController.php:            if ($model->upload()) {
+ServiceController.php:        return $this->render('import1c', ['model' => $model]);
+ServiceController.php:        if ($model->load(Yii::$app->request->post())) {
+ServiceController.php:            $list = $model->make();
+ServiceController.php:            return $this->render('auto_ok', ['model' => $model, 'list' => $list]);
+ServiceController.php:        // if (Yii::$app->request->isPost) {
+ServiceController.php:        //     if ($model->make()){
+ServiceController.php:        //         return $this->render('auto_ok', ['model' => $model]);
+ServiceController.php:        return $this->render('auto', ['model' => $model]);
+ServiceController.php:       //  if ($model->load($_POST)) {
+ServiceController.php:       //      $model->image = $file;
+ServiceController.php:       //      if ($model->validate()) {
+ServiceController.php:       //          $uploaded = $file->saveAs( $dir . $model->image->name );
+ServiceController.php:       //  return $this->render('test',[
+SiteController.php:        return $this->render('index');
+SiteController.php:        if (!Yii::$app->user->isGuest) {
+SiteController.php:            return $this->goHome();
+SiteController.php:        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+SiteController.php:            return $this->goBack();
+SiteController.php:        return $this->render('login', [
+SiteController.php:        Yii::$app->user->logout();
+SiteController.php:        return $this->goHome();
+SiteController.php:        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
+SiteController.php:            Yii::$app->session->setFlash('contactFormSubmitted');
+SiteController.php:            return $this->refresh();
+SiteController.php:        return $this->render('contact', [
+SiteController.php:        return $this->render('about');
+StoreController.php:        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+StoreController.php:        return $this->render('index', [
+StoreController.php:        return $this->render('view', [
+StoreController.php:            'model' => $this->findModel($id),
+StoreController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+StoreController.php:            return $this->redirect(['index']);
+StoreController.php:            return $this->render('create', [
+StoreController.php:        $model = $this->findModel($id);
+StoreController.php:        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+StoreController.php:            return $this->redirect(['index']);
+StoreController.php:            return $this->render('update', [
+StoreController.php:        $this->findModel($id)->delete();
+StoreController.php:        return $this->redirect(['index']);
